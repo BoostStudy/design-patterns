@@ -23,12 +23,13 @@
 
 |[김명석](https://github.com/audxo112)|[이지훈](https://github.com/lee-ji-hoon)|[양수진](https://github.com/yangsooplus)|[이동훈](https://github.com/ldh019)|
 |---|---|---|---|
+|<img src="https://avatars.githubusercontent.com/u/9216335?v=4" width= 300px/>|<img src="https://avatars.githubusercontent.com/u/53300830?v=4" width= 300px />|<img src="https://avatars.githubusercontent.com/u/69582122?v=4" width= 300px />|<img src="https://avatars.githubusercontent.com/u/62137001?v=4" width= 300px/>|
 
 ## 정리
 
 | 장   | 제목                                  | 날짜 | 링크 |
 | ---- | ------------------------------------- | ---- | ---- |
-| 제1장 | 개요                                  |      |      |
+| 제1장 | 개요                                  | 11/19      | https://github.com/BoostStudy/design-patterns/issues/1      |
 | 제2장 | 객체지향 프로그래밍 패러다임          |      |      |
 | 제3장 | 설계 원칙                              |      |      |
 | 제4장 | 코딩 규칙                             |      |      |
