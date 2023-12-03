@@ -27,7 +27,7 @@
 | 장   | 제목                                  | 날짜 | 링크 |
 | ---- | ------------------------------------- | ---- | ---- |
 | 제1장 | 개요                                  | 11/19      | https://github.com/BoostStudy/design-patterns/issues/1      |
-| 제2장 | 객체지향 프로그래밍 패러다임          |      |      |
+| 제2장 | 객체지향 프로그래밍 패러다임          |      | 12/03     | https://github.com/BoostStudy/design-patterns/issues/2
 | 제3장 | 설계 원칙                              |      |      |
 | 제4장 | 코딩 규칙                             |      |      |
 | 제5장 | 리팩터링 기법                          |      |      |
