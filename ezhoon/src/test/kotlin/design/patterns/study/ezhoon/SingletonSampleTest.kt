@@ -1,54 +1,20 @@
 package design.patterns.study.ezhoon
 
-import kotlinx.coroutines.test.runBlockingTest
+import design.patterns.study.ezhoon.chapter06.DoubleCheckSingletonSample
+import design.patterns.study.ezhoon.chapter06.LazyLoadingSingletonSampleSample
+import design.patterns.study.ezhoon.chapter06.ObjectSample
+import design.patterns.study.ezhoon.chapter06.SingletonSample
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
-interface SingletonSample {
-    var count: Int
-}
-
-object ObjectSample : SingletonSample {
-    override var count = 0
-}
-
-class LazyLoadingSingletonSampleSample private constructor() : SingletonSample {
-
-    override var count = 0
-
-    companion object {
-
-        private val lazyLoadingSingletonSample by lazy { LazyLoadingSingletonSampleSample() }
-
-        fun getInstance(): LazyLoadingSingletonSampleSample {
-            return lazyLoadingSingletonSample
-        }
-    }
-}
-
-class DoubleCheckSingletonSample private constructor() : SingletonSample {
-
-    override var count: Int = 0
-
-    companion object {
-
-        @Volatile
-        private var instance: DoubleCheckSingletonSample? = null
-
-        fun getInstance() = instance ?: synchronized(this) {
-            instance ?: DoubleCheckSingletonSample().also { instance = it }
-        }
-    }
-}
-
 
 class SingletonSampleTest {
     @ParameterizedTest(name = "{1}")
     @MethodSource("provideSingletonFactories")
-    fun `싱글톤 객체 테스트`(singleTonSamples: `싱글톤 페어`, displayName: String)  {
+    fun `싱글톤 객체 테스트`(singleTonSamples: `싱글톤 페어`, displayName: String) {
         val firstSingleton = singleTonSamples.first
         val secondSingleton = singleTonSamples.second
 
