@@ -48,7 +48,7 @@ class DoubleCheckSingletonSample private constructor() : SingletonSample {
 class SingletonSampleTest {
     @ParameterizedTest(name = "{1}")
     @MethodSource("provideSingletonFactories")
-    fun `싱글톤 객체 테스트`(singleTonSamples: `싱글톤 페어`, displayName: String) = runBlockingTest {
+    fun `싱글톤 객체 테스트`(singleTonSamples: `싱글톤 페어`, displayName: String)  {
         val firstSingleton = singleTonSamples.first
         val secondSingleton = singleTonSamples.second
 
