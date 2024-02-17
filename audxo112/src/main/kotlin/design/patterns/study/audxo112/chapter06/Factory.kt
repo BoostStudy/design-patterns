@@ -1,8 +1,6 @@
 package design.patterns.study.audxo112.chapter06
 
-import java.text.DateFormat
 import java.text.NumberFormat
-import java.time.LocalTime
 import java.util.*
 
 class Factory {
@@ -10,7 +8,6 @@ class Factory {
     fun example() {
         // Locale 에 따라 다른 출력을 줘야 하므로
         Calendar.getInstance()
-        DateFormat.getInstance()
         NumberFormat.getInstance()
     }
 
@@ -83,14 +80,6 @@ class Factory {
 
         println()
     }
-
-    /**
-     * 정적 팩토리 메서드
-     * 1. 함수이름을 통해 목적을 나타낼 수 있다
-     * 2. 캐싱을 할 수 있다 (Ex. SingleTon getInstance())
-     * 3. 하위 자료형을 반환할 수 있다
-     * 4. mapper 도 정적 팩토리의 일종
-     */
 
     data class Data(
         val id: Long,
