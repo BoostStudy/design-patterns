@@ -8,6 +8,8 @@ class LazyLoadingSingletonSampleSample private constructor() : SingletonSample {
 
         private val lazyLoadingSingletonSample by lazy { LazyLoadingSingletonSampleSample() }
 
+        const val testInt = 0
+
         fun getInstance(): LazyLoadingSingletonSampleSample {
             return lazyLoadingSingletonSample
         }
