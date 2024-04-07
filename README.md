@@ -31,5 +31,5 @@
 | 제4장 | 코딩 규칙                             |  01/29    | https://github.com/BoostStudy/design-patterns/issues/4     |
 | 제5장 | 리팩터링 기법                          | 01/29     | https://github.com/BoostStudy/design-patterns/issues/5     |
 | 제6장 | 생성 디자인 패턴                       | 02/17     | https://github.com/BoostStudy/design-patterns/issues/6     |
-| 제7장 | 구조 디자인 패턴                       |      |      |
+| 제7장 | 구조 디자인 패턴                       | 3/10, 04/07     | https://github.com/BoostStudy/design-patterns/issues/7 https://github.com/BoostStudy/design-patterns/issues/8     |
 | 제8장 | 행동 디자인 패턴                       |      |      |
