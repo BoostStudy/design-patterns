@@ -43,7 +43,6 @@ class DIFactory {
                     argObjects[i] = create(refDefinition)
                 }
             }
-            println(argClasses.joinToString { it.toString() })
             clazz.getConstructor(*argClasses).newInstance(*argObjects)
         } ?: throw NullPointerException("알 수 없는 객체 입니다")
 
